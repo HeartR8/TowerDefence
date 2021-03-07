@@ -4,6 +4,15 @@ namespace Field
 {
     public class Node
     {
+        public enum OccupationAvailability
+        {
+            CanOccupy,
+            CanNotOccupy,
+            Undefined
+        }
+        
+        public OccupationAvailability m_OccupationAvailability = OccupationAvailability.Undefined;
+        
         public Vector3 Position;
         
         public Node NextNode;

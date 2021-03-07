@@ -345,7 +345,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MovementAgent: {fileID: 2396199740636483576, guid: cdfda44868d49d74194a90ad38cd4b4f, type: 3}
   m_GridHolder: {fileID: 718091329}
-  m_SceneAsset: {fileID: 102900000, guid: 5143e775d3da8cd459c6db6b674c0a64, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,4 +441,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0891f548dec54f38bf0f1684fb803da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Speed: 5
