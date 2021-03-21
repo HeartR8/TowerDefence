@@ -1,20 +1,22 @@
-﻿using Field;
+﻿using System;
+using Field;
 using UnityEngine;
 using Grid = Field.Grid;
 
 namespace Enemy
 {
-    public class GridMovementAgent : IMovementAgent
+    public class FlyingMovementAgent  : IMovementAgent
     {
         private float m_Speed;
         private Transform m_Transform;
-
-        public GridMovementAgent(float speed, Transform transform, Grid grid)
+        private Grid m_Grid;
+        public FlyingMovementAgent (float speed, Transform transform, Grid grid)
         {
             m_Speed = speed;
             m_Transform = transform;
+            m_Grid = grid;
             
-            SetTargetNode(grid.GetStartNode());
+            SetTargetNode(grid.GetTargetNode());
         }
 
         private const float TOLERANCE = 0.1f;

@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Enemy;
+using EnemySpawn;
+using Field;
 using UnityEngine;
 
 namespace Runtime
@@ -33,8 +36,12 @@ namespace Runtime
 
         private void CreateAllControllers()
         {
-            m_Controllers = new List<IController>();
-            m_Controllers.Add(new TestController());
+            m_Controllers = new List<IController>
+            {
+                new GridPointerController(Game.Player.GridHolder),
+                new EnemySpawnController(Game.CurrentLevel.SpawnWavesAsset, Game.Player.Grid),
+                new MovementController()
+            };
         }
 
         private void OnStartControllers()
