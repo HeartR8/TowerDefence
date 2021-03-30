@@ -1,3 +1,14 @@
-﻿fileFormatVersion: 2
+fileFormatVersion: 2
 guid: 920f06ece9a9452fa2da89f55980f628
-timeCreated: 1614614338
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - SceneAsset: {fileID: 102900000, guid: 28716f4fd612cde48a27fb7c2c228265, type: 3}
+  - SpawnWavesAsset: {fileID: 11400000, guid: 99c045b8e43dc8445a8f33be98c0d014, type: 2}
+  - TurretMarketAsset: {fileID: 11400000, guid: bbf2e6917724690418508f415e23d67a, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

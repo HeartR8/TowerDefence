@@ -140,9 +140,9 @@ namespace Field
             
         }
 
-        public bool CanOccupy(Vector2Int coordinate)
+        public bool CanOccupy(Node node)
         {
-            Node currentNode = m_Grid.GetNode(coordinate);
+            Node currentNode = node;
             if (currentNode.m_OccupationAvailability == Node.OccupationAvailability.CanOccupy)
             {
                 return true;

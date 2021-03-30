@@ -86,16 +86,11 @@ namespace Field
                 int x = (int) (difference.x / m_NodeSize);
                 int y = (int) (difference.z / m_NodeSize);
 
-                m_Grid.SelectCoordinate(new Vector2Int(x, y));
+                //m_Grid.SelectCoordinate(new Vector2Int(x, y));
                 
                 if (Input.GetMouseButtonDown(0))
                 {
-                    bool canOccupy = false;
-                    m_Grid.TryOccupyNode(new Vector2Int(x, y), ref canOccupy);
-                    if (canOccupy)
-                    {
-                        m_Grid.UpdatePathfinding();
-                    }
+                    m_Grid.SelectCoordinate(m_Grid.GetNode(new Vector2Int(x, y)));
                 }
             }
             else
